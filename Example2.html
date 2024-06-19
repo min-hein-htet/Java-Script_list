@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> List Example 1 ( Map ) </h1>
+    <hr>
+    <script>
+
+        const items=[
+            {id:1,name:'latte',category:'coffee',price:3000},
+            {id:2,name:'expresso',category:'coffee',price:3000},
+            {id:3,name:'americano',category:'coffee',price:3000},
+            {id:4,name:'cappuccino',category:'coffee',price:3000},
+            {id:5,name:'apple',category:'juice',price:3000},
+            {id:6,name:'orange',category:'juice',price:3000},
+            {id:7,name:'mango',category:'juice',price:3000},
+            {id:8,name:'pmg',category:'water',price:3000},
+            {id:9,name:'alpine',category:'water',price:3000},
+            {id:10,name:'coke',category:'soda',price:3000},
+            {id:11,name:'pepsi',category:'soda',price:3000},
+            {id:12,name:'sprite',category:'soda',price:3000}
+        ];
+
+
+        const name_list=items.map((item)=>item.name+"-"+item.price)
+
+        console.log("ITem Name and Price List...")
+        name_list.forEach((item)=>{
+            console.log(item)
+        })
+    
+        </script>
+</body>
+</html>

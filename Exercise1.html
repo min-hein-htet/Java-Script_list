@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>List Exercise</h1>
+    <hr>
+
+    <script>
+
+        const items=[
+        {id:1,category:"clothes",name:"t-shirt",price:22000},
+        {id:2,category:"clothes",name:"blouse",price:70000},
+        {id:3,category:"clothes",name:"dress",price:60000},
+        {id:4,category:"clothes",name:"long coat",price:20000},
+        {id:5,category:"shoes",name:"puma",price:20000},
+        {id:6,category:"shoes",name:"nike air",price:80000},
+        {id:7,category:"bag",name:"handbag",price:90000},
+        {id:8,category:"bag",name:"lather-bag",price:30000},
+        {id:9,category:"accessories",name:"men's watch",price:10000},
+        {id:10,category:"accessories",name:"sun glass",price:20000},
+        {id:11,category:"accessories",name:"ear ring",price:27000},
+        {id:12,category:"shoes",name:"Air Jordan MX",price:23000},
+        {id:13,category:"shoes",name:"Addidas",price:40000},
+        {id:14,category:"bag",name:"LV Bag",price:24000,},
+        {id:15,category:"bag",name:"hermise",price:28000},
+            
+        ]
+        console.log ("No 1")
+        console.log ("Product list")
+        const categories_list=items.map((items)=>items.categories)
+        categories_list.forEach((items)=>{
+            console.log(items)
+            
+             })
+          
+        
+
+        console.log ("No 2")
+        console.log("Clothes list")
+        const clothes_list=items.filter((obj)=>obj.category=='clothes')
+        clothes_list.forEach((clothes)=>{
+
+            console.log ("---------------")
+            console.log ("Id=", clothes.id)
+            console.log ("Category=", clothes.category)
+            console.log ("Name=", clothes.name)
+            console.log ("Price=", clothes.price)
+            console.log ("---------------")
+
+
+        })
+        console.log ("No 3")
+        console.log ("Bag List")
+        const bag_list=items.filter((obj)=>obj.category=='bag')
+        bag_list.forEach((bag)=>{
+
+            console.log ("---------------")
+            console.log ("Id=", bag.id)
+            console.log ("Category=", bag.category)
+            console.log ("Name=", bag.name)
+            console.log ("Price=", bag.price) 
+            console.log ("---------------")
+        })
+
+
+        console.log ("No 4")
+        console.log ("Product Name List")
+        const name_list=items.map((items)=>items.name)
+        name_list.forEach((items)=>{
+            console.log(items)
+            
+             })
+
+       
+        console.log ("No 5")
+
+        const price_list=items.map((x)=>x.price)
+        const initValue=0;
+        const grandTotal=price_list.reduce((sum,num)=>sum=sum+num,initValue)
+
+        console.log ("grandTotal=", grandTotal )
+
+       
+       
+        console.log ("No 6")
+        console.log ("find Function Return object")
+        const rec=items.find((item)=>item.id==15)
+          console.log (rec)
+
+
+        
+        
+        console.log ("No 7")
+        console.log ("Some Function Return boolean")
+        const res=items.some((item)=>item.id==25)
+          console.log (res)
+
+        
+        
+        
+        console.log ("No 8")
+        const categories=["shoes","bag", "clothes","accessories"]
+        console.log ("Sorted Categories")
+        const sorted_categories=categories.sort((a,b)=>b.localeCompare(a))
+
+            sorted_categories.forEach((categories)=>{
+                console.log(categories)
+            })
+
+
+    
+        console.log ("No 9")
+        const nums=[22000,70000,60000,20000,20000,80000,90000,30000,10000,20000,27000,23000,24000,28000,40000]  
+        console.log ("Sorted Price")
+        const sorted_nums=nums.sort((a,b)=>b-a)
+           
+            sorted_nums.forEach((num)=>{
+                console.log(num)
+            })
+
+
+        
+        
+    </script>
+    
+</body>
+</html>

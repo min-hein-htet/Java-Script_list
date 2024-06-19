@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> List Example 1</h1>
+    <hr>
+    <script>
+
+        const items=[
+            {id:1,name:'latte',category:'coffee',price:3000},
+            {id:2,name:'expresso',category:'coffee',price:3000},
+            {id:3,name:'americano',category:'coffee',price:3000},
+            {id:4,name:'cappuccino',category:'coffee',price:3000},
+            {id:5,name:'apple',category:'juice',price:3000},
+            {id:6,name:'orange',category:'juice',price:3000},
+            {id:7,name:'mango',category:'juice',price:3000},
+            {id:8,name:'pmg',category:'water',price:3000},
+            {id:9,name:'alpine',category:'water',price:3000},
+            {id:10,name:'coke',category:'soda',price:3000},
+            {id:11,name:'pepsi',category:'soda',price:3000},
+            {id:12,name:'sprite',category:'soda',price:3000}
+        ];
+
+        const coffee_list=items.filter((obj)=>obj.category=='coffee')
+
+        console.log("Coffee List")
+        coffee_list.forEach((coffee)=>{
+           
+            console.log('--------------')
+            console.log('ID = ',coffee.id)
+            console.log('Category= ',coffee.category)
+            console.log('Name = ',coffee.name)
+            console.log('Price = ',coffee.price)
+            console.log('--------------')
+        })
+
+
+        console.log("Juice List")
+        const juice_list=items.filter((obj)=>obj.category=='juice')
+
+        juice_list.forEach((juice)=>{
+        
+            console.log('--------------')
+            console.log('ID = ',juice.id)
+            console.log('Category= ',juice.category)
+            console.log('Name = ',juice.name)
+            console.log('Price = ',juice.price)
+            console.log('--------------')
+        })
+    </script>
+</body>
+</html>

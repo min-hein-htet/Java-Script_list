@@ -1,0 +1,30 @@
+
+const product_list=[
+
+    {id:1,category:"clothes",name:"t-shirt",price:22000,inStock:true},
+    {id:2,category:"clothes",name:"blouse",price:70000,inStock:false},
+    {id:3,category:"clothes",name:"dress",price:60000,inStock:true},
+    {id:4,category:"clothes",name:"long coat",price:20000,inStock:true},
+    {id:5,category:"shoes",name:"puma",price:20000,inStock:true},
+    {id:6,category:"shoes",name:"nike air",price:80000,inStock:false},
+    {id:7,category:"bag",name:"handbag",price:90000,inStock:true},
+    {id:8,category:"bag",name:"lather-bag",price:30000,inStock:true},
+    {id:9,category:"accessories",name:"men's watch",price:10000,inStock:true},
+    {id:10,category:"accessories",name:"sun glass",price:20000,inStock:true},
+    {id:11,category:"accessories",name:"ear ring",price:27000,inStock:true},
+    {id:12,category:"shoes",name:"Air Jordan MX",price:23000,inStock:true},
+    {id:13,category:"shoes",name:"Addidas",price:40000,inStock:false},
+    {id:14,category:"bag",name:"LV Bag",price:24000,inStock:true},
+    {id:15,category:"bag",name:"hermise",price:28000,inStock:true},
+]
+
+
+1. show all product list
+2. show clothes product only
+3. show bag product only 
+4. create new array of product name list 
+5. calculate price total 
+6. find product which id is 10 
+7. check product category furniture exists (true) 
+8. sort product list according to category 
+9. Sort product list according to price
